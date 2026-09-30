@@ -40,6 +40,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       matchTime: 30000,
       resetMatch: 'app',
+      activityIds: ['com.xingin.update.UpdateDialogActivity'],
       rules: [
         {
           key: 0,
@@ -52,6 +53,11 @@ export default defineGkdApp({
           matches:
             '@ImageView[clickable=true] <2 FrameLayout +3 FrameLayout > Button[text="立即参与内测"]',
           snapshotUrls: 'https://i.gkd.li/import/13741680',
+        },
+        {
+          key: 1,
+          matches: '@Button[clickable=true][text="稍后再说"]',
+          snapshotUrls: ['https://i.gkd.li/i/32845747'],
         },
       ],
     },
