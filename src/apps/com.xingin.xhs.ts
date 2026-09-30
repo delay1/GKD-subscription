@@ -92,7 +92,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '开屏广告',
-      fastQuery: false,
+      fastQuery: true,
       actionMaximum: 6,
       actionCd: 500,
       order: -100,
@@ -102,16 +102,13 @@ export default defineGkdApp({
         {
           key: 0,
           matches: ['[text^="跳过广告"]'],
+          action: 'longClick',
           snapshotUrls: ['https://i.gkd.li/i/32845208'],
         },
         {
           key: 1,
           matches: ['[text*="跳过"]'],
-          snapshotUrls: ['https://i.gkd.li/i/32845208'],
-        },
-        {
-          key: 2,
-          matches: ['@TextView[clickable=true][text^="跳过广告"]'],
+          action: 'longClick',
           snapshotUrls: ['https://i.gkd.li/i/32845208'],
         },
       ],
