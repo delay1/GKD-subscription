@@ -5,7 +5,6 @@ export default defineGkdApp({
   name: '小米手机管家',
   groups: [
     {
-      enable: false,
       key: 10,
       name: '功能类-自动继续安装',
       desc: 'USB安装应用,点击继续安装',
