@@ -92,7 +92,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '开屏广告',
-      fastQuery: true,
+      fastQuery: false,
       actionMaximum: 3,
       actionCd: 200,
       order: -10,
