@@ -22,15 +22,15 @@ export default defineGkdApp({
     {
       key: 2,
       name: '开屏广告',
-      fastQuery: true,
-      actionMaximum: 1,
+      fastQuery: false,
+      actionMaximum: 3,
+      actionCd: 200,
       matchTime: 10000,
       resetMatch: 'app',
-      // activityIds 去掉，因为触发时 Activity 是 null
       rules: [
         {
           key: 0,
-          matches: '[text^="跳过广告"][text.length<10]',
+          matches: '[text^="跳过广告"][text.length<10][visibleToUser=true]',
           action: 'longClick',
           snapshotUrls: ['https://i.gkd.li/i/32844737'],
         },
