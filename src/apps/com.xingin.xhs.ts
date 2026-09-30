@@ -100,6 +100,11 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          matches: '@ViewGroup > TextView[text^="跳过广告"]',
+          snapshotUrls: ['https://i.gkd.li/i/32845208'],
+        },
+        {
+          key: 1,
           matches: '@TextView[clickable=true][text^="跳过广告"]',
           snapshotUrls: ['https://i.gkd.li/i/32845208'],
         },
