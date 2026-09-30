@@ -98,6 +98,7 @@ export default defineGkdApp({
       order: -100,
       matchTime: 10000,
       resetMatch: 'app',
+      activityIds: ['com.xingin.xhs.index.v2.IndexActivityV2'],
       rules: [
         {
           key: 0,
