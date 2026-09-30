@@ -30,7 +30,8 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[text^="跳过广告"][text.length<10][visibleToUser=true]',
+          matches: '[text^="跳过广告"][text.length<10]',
+          action: 'longClick',
           snapshotUrls: ['https://i.gkd.li/i/32844737'],
         },
       ],
