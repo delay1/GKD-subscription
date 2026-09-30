@@ -26,11 +26,11 @@ export default defineGkdApp({
       actionMaximum: 1,
       matchTime: 10000,
       resetMatch: 'app',
-      activityIds: ['com.xiaomi.market.business_ui.main.MarketTabActivity'],
+      // activityIds 去掉，因为触发时 Activity 是 null
       rules: [
         {
           key: 0,
-          matches: '@LinearLayout[clickable=true] > TextView[text^="跳过广告"]',
+          matches: '[text^="跳过广告"][text.length<10][visibleToUser=true]',
           snapshotUrls: ['https://i.gkd.li/i/32844737'],
         },
       ],
