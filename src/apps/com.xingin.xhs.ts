@@ -93,11 +93,11 @@ export default defineGkdApp({
       key: 4,
       name: '开屏广告',
       fastQuery: true,
-      actionMaximum: 2,
+      actionMaximum: 3,
+      actionCd: 200,
       order: -10,
       matchTime: 10000,
       resetMatch: 'app',
-      // activityIds 删掉
       rules: [
         {
           key: 0,
