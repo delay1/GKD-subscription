@@ -94,14 +94,14 @@ export default defineGkdApp({
       name: '开屏广告',
       fastQuery: false,
       actionMaximum: 3,
-      actionCd: 200,
-      order: -10,
+      actionCd: 100,
+      order: -100,
       matchTime: 10000,
       resetMatch: 'app',
       rules: [
         {
           key: 0,
-          matches: ['[text^="跳过广告"][text.length<10][visibleToUser=true]'],
+          matches: ['[text^="跳过广告"]'],
           action: 'longClick',
           snapshotUrls: ['https://i.gkd.li/i/32845208'],
         },
