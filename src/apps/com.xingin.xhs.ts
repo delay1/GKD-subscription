@@ -93,9 +93,10 @@ export default defineGkdApp({
       key: 4,
       name: '开屏广告',
       fastQuery: true,
-      actionMaximum: 1,
+      actionMaximum: 3,
       matchTime: 10000,
       resetMatch: 'app',
+      actionCd: 300,
       activityIds: ['com.xingin.xhs.index.v2.IndexActivityV2'],
       rules: [
         {
